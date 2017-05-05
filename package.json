@@ -1,0 +1,23 @@
+{
+  "name": "twit-bot",
+  "version": "0.0.1",
+  "description": "A test for the random french word tweet bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "twitter",
+    "tweet",
+    "french",
+    "words"
+  ],
+  "author": "Anizan G.",
+  "license": "ISC",
+  "dependencies": {
+    "bitly": "^4.1.1",
+    "twit": "^2.2.5"
+  }
+}
