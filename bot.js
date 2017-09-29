@@ -1,8 +1,9 @@
 console.log('The bot is starting...');
 
-var Twit = require('twit'),
+var token = require('./token.js'),
+    Twit = require('twit'),
     Bitly = require('bitly'),
-    bitly = new Bitly('62df68a76f38974df32808cbed6d063996fe993f'),
+    bitly = new Bitly(token.bitly),
     config = require('./config'),
     word = require('./words'),
     T = new Twit(config);
@@ -10,7 +11,7 @@ var Twit = require('twit'),
 function init() {
     var tweetingStart = setInterval(function() {
         
-        loop()
+        loop();
         
         init();
         clearInterval(tweetingStart);
